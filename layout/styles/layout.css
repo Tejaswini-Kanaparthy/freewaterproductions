@@ -61,6 +61,7 @@ File: Layout CSS
 .services article footer a{display:block; width:100%; padding:8px 0; opacity:0;}
 .services article:hover footer a, .services .active article footer a{opacity:1;}
 
+
 /* Comments */
 #comments ul{margin:0 0 40px 0; padding:0; list-style:none;}
 #comments li{margin:0 0 10px 0; padding:15px;}
@@ -362,4 +363,19 @@ table a, #comments a{background-color:inherit;}
 
 	#pageintro li article{max-width:none; width:100%;}
 	#pageintro li .heading{font-size:1.6rem;}
+}
+
+.article-bg {
+    background-size: cover;
+    background-position: center;
+}
+
+.bgded {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay {
+    position: relative;
 }

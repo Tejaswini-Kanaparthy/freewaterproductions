@@ -12,15 +12,43 @@ Licence URI: http://www.os-templates.com/template-terms
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<style>
+  .bgded.overlay {
+  position: relative; /* Set the position to relative */
+  z-index: 2; /* Add any other necessary styles */
+}
+
+.flexslider {
+  position: absolute; /* Set the position to absolute */
+  top: 7%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Ensure the Flexslider is above the images */
+}
+
+.wrapper.row3{
+  position: relative;
+  z-index:3;
+}
+.pad {
+    padding-top: 75px; 
+    padding-bottom: 75px; 
+    }
+
+body {
+    background-color: black;
+}
+</style>
 </head>
 <body id="top">
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- Top Background Image Wrapper -->
-<div class="bgded overlay" style="background-image:url('images/demo/backgrounds/01.png');"> 
+<div class="bgded overlay" style="background-image:url('images/graphics/black.webp');"> 
   <!-- ################################################################################################ -->
-  <div class="wrapper row1">
+  <div class="wrapper row1" >
     <header id="header" class="hoc clear"> 
       <!-- ################################################################################################ -->
       <div id="logo" class="fl_left">
@@ -58,47 +86,48 @@ Licence URI: http://www.os-templates.com/template-terms
       <!-- ################################################################################################ -->
     </header>
   </div>
+</div>
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
-  <div id="pageintro" class="hoc clear"> 
+  </div><div id="pageintro" class="hoc clear"> 
     <!-- ################################################################################################ -->
-    <div class="flexslider basicslider">
+    <div class="flexslider" style="height: 50vh;">
       <ul class="slides">
         <li>
-          <article class="bgded overlay" style="background-image: url('images/GRILLED.jpg');">
-            <p>DUKE UNIVERSITY'S STUDENT-RUN FILM PRODUCTION COMPANY</p>
-            <h3 class="heading">FREEWATER PRODUCTIONS</h3>
-            <p>Vitae lobortis id ut mi in molestie in</p>
-            <footer><a class="btn" href="#">Venenatis curabitur</a></footer>
-          </article>
+          
+          <img src="images/graphics/DevOps Graphics Package/Horizontal Stills/GRILLED.jpg" />
+          <div class="empty-space"></div>
+          <!-- ################################################################################################ -->
+          </li>
+        <li>
+          <img class="full-screen-image" src="images/graphics/DevOps Graphics Package/Horizontal Stills/Last Day of May.jpg" />
+          <div class="empty-space"></div>
         </li>
         <li>
-          <article>
-            <p>Scelerisque</p>
-            <h3 class="heading">Dolor rhoncus nullam</h3>
-            <p>Augue non id quam sit amet urna lobortis</p>
-            <footer><a class="btn inverse" href="#">Interdum lectus</a></footer>
-          </article>
+          <img src="images/graphics/DevOps Graphics Package/Horizontal Stills/Meet Me By Our Spot.jpg" />
+          <div class="empty-space"></div>
         </li>
         <li>
-          <article>
-            <p>Vestibulum</p>
-            <h3 class="heading">Justo erat venenatis</h3>
-            <p>Tempor sit amet ac nibh nullam mattis</p>
-            <footer><a class="btn" href="#">Bibendum magna</a></footer>
-          </article>
+          <img class="full-screen-image" src="images/graphics/DevOps Graphics Package/Horizontal Stills/LUM.jpg" />
+          <div class="empty-space"></div>
+        </li>
+        <li>
+          <img class="full-screen-image" src="images/graphics/DevOps Graphics Package/Horizontal Stills/Palette Cleanser.jpg" />
+          <div class="empty-space"></div>
         </li>
       </ul>
     </div>
     <!-- ################################################################################################ -->
   </div>
   <!-- ################################################################################################ -->
-</div>
+
 <!-- End Top Background Image Wrapper -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
+<div class="pad">
+</div>
 <div class="wrapper row3">
   <main class="hoc container clear"> 
     <!-- main body -->
@@ -267,6 +296,16 @@ Licence URI: http://www.os-templates.com/template-terms
 <script src="layout/scripts/jquery.backtotop.js"></script>
 <script src="layout/scripts/jquery.mobilemenu.js"></script>
 <script src="layout/scripts/jquery.flexslider-min.js"></script>
+<script>
+  $(document).ready(function() {
+      $('.flexslider').flexslider({
+          animation: "slide",
+          slideshow: true,
+          controlNav: true, // Hide default navigation dots
+          directionNav: true, // Hide default navigation arrows
+      });
+  });
+</script>
 <html lang="en"></html>
 </body>
 </html>
