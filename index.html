@@ -10,7 +10,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <head>
 <title>Freewater Productions</title>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"> 
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 <style>
 
@@ -20,7 +20,6 @@ Licence URI: http://www.os-templates.com/template-terms
     float: left;
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
-
 
 
 .one_third_ article {
@@ -56,14 +55,25 @@ Licence URI: http://www.os-templates.com/template-terms
     padding-bottom: 75px; 
     }
 
-    .pad2 {
-    padding-top: 20px; 
-    padding-bottom: 20px; 
+.pad2 {
+    padding-top: 30px; 
+    padding-bottom: 30px; 
+    }
+
+.pad3 {
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    }
+
+.pad4 {
+    padding-top: 5px; 
     }
 
 body {
     background-color: black;
 }
+
+
 
 /* Apply styles only to elements within the third wrapper */
 .wrapper.row3 .container {
@@ -80,6 +90,94 @@ body {
 }
 
 
+p {
+    font-size: 16px; /* Change the font size as needed */
+    color: black;
+    
+  }
+
+
+h3 {
+    font-size: 30px; /* Change the font size as needed */
+    color: black;
+    
+  }
+
+
+  #header {
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+#header #logo {
+  padding-right: 0px;
+  order: -1;
+}
+
+#logo img {
+    width: 900px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+#logo {
+    margin-top: 0 !important; /* Remove the gap */
+}
+
+.bullet-list {
+  list-style-type: none; /* Set the bullet style */
+  padding-left: 100px; /* Add left padding to create space for the bullets */
+  color: black;
+  font-size: 16px;
+}
+
+.bullet-list li {
+  margin-bottom: 10px; /* Adjust the margin bottom as needed */
+  background-image: url('images/graphics/logos/water_drop.png'); /* Replace 'your_bullet_image.png' with the path to your bullet image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: left center; /* Position the image on the left center of each list item */
+  padding-left: 20px;
+  background-size: 20px; /* Change the size as needed */
+}
+
+.filmmaking-image {
+  width: 700px; /* Set the width of the image */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.footer-content {
+    color: white;
+  }
+
+  .footer-content a {
+    color: white;
+  }
+
+  #footer-wrapper {
+    margin: 0;
+    padding: 10;
+  }
+
+  /* Adjust margin and padding for the footer */
+  #footer {
+    margin: 10;
+    padding: 35px 0; /* Adjust the top and bottom padding as needed */
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 150px; /* Adjust the spacing between the images */
+}
+
+.social-media img {
+    width: 50px; /* Adjust the width of the images as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
 </style>
 </head>
 <body id="top">
@@ -92,8 +190,8 @@ body {
   <div class="wrapper row1" >
     <header id="header" class="hoc clear"> 
       <!-- ################################################################################################ -->
-      <div id="logo" class="fl_left">
-        <h1><a href="index.html">Freewater Productions</a></h1>
+      <div id="logo">
+        <img src = "images/graphics/logos/promising.png" alt = "Logo Image">
       </div>
       <nav id="mainav" class="fl_right">
         <ul class="clear">
@@ -137,7 +235,7 @@ body {
   <!-- ################################################################################################ -->
   </div><div id="pageintro" class="hoc clear"> 
     <!-- ################################################################################################ -->
-    <div class="flexslider" style="height: 50vh;">
+    <div class="flexslider" style="height: 51vh;">
       <ul class="slides">
         <li>
           
@@ -171,7 +269,6 @@ body {
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-
 <div class="pad">
 </div>
 <div class="wrapper row3">
@@ -183,39 +280,37 @@ body {
       <div class="pad2"></div>
       <div style="display: flex; justify-content: space-between; align-items: center;">
         <h3 class="nospace">Upcoming Films:</h3>
-        <a href="pages/gallery.html">See more -></a>
       </div>
-      
     </div>
     <ul class="nospace group services">
-      <li class="one_third_ active">
+      <li class="one_third_ ">
         <article class="bgded overlay" style="background-image:url('images/graphics/DevOps Graphics Package/Vertical Posters/GRILLED.jpg');">
          
-          <footer><a href="#">More &raquo;</a></footer>
+          <footer><a href="pages/gallery.html">More &raquo;</a></footer>
         </article>
       </li>
-      <li class="one_third_ active">
+      <li class="one_third_ ">
         <article class="bgded overlay" style="background-image:url('images/graphics/DevOps Graphics Package/Vertical Posters/Last Day of May.jpg');">
          
-          <footer><a href="#">More &raquo;</a></footer>
+          <footer><a href="pages/gallery.html">More &raquo;</a></footer>
         </article>
       </li>
-      <li class="one_third_ active">
+      <li class="one_third_ ">
         <article class="bgded overlay" style="background-image:url('images/graphics/DevOps Graphics Package/Vertical Posters/Meet Me By Our Spot.jpg');">
          
-          <footer><a href="#">More &raquo;</a></footer>
+          <footer><a href="pages/gallery.html">More &raquo;</a></footer>
         </article>
       </li>
-      <li class="one_third_ active">
+      <li class="one_third_ ">
         <article class="bgded overlay" style="background-image:url('images/graphics/DevOps Graphics Package/Vertical Posters/Palette Cleanser.jpg');">
         
-          <footer><a href="#">More &raquo;</a></footer>
+          <footer><a href="pages/gallery.html">More &raquo;</a></footer>
         </article>
       </li>
-      <li class="one_third_ active">
+      <li class="one_third_ ">
         <article class="bgded overlay" style="background-image:url('images/graphics/DevOps Graphics Package/Vertical Posters/Sabre - A Fencer_s Story.jpg');">
          
-          <footer><a href="#">More &raquo;</a></footer>
+          <footer><a href="pages/gallery.html">More &raquo;</a></footer>
         </article>
       </li>
     </ul>
@@ -224,72 +319,161 @@ body {
     <div class="clear"></div>
   </main>
 </div>
+
+
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper">
-  <article id="shout" class="hoc container clear"> 
-    <!-- ################################################################################################ -->
-    <div class="three_quarter first">
-      <h2 class="heading btmspace-10">Magna lacus mattis in ipsum tincidunt</h2>
-      <p class="nospace">Porta erat cras vitae maximus purus suspendisse blandit nec justo mollis etiam vitae.</p>
-    </div>
-    <footer class="one_quarter"><a class="btn" href="#">Accumsan metus</a></footer>
-    <!-- ################################################################################################ -->
-  </article>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
+
+
+
 <div class="wrapper row3">
-  <section class="hoc container clear"> 
+  
+  <main class="hoc container clear"> 
+    <!-- main body -->
     <!-- ################################################################################################ -->
-    <div class="pad2"></div>
-    <div class="btmspace-80 center">
-      <h3 class="nospace">Gravida nulla aliquam</h3>
-      <p class="nospace">Erat volutpat integer vestibulum purus et sagittis rhoncus.</p>
-    </div>
-    <div class="group">
-      <div class="one_third first">
-        <h6 class="nospace font-x1">Elit vel porttitor</h6>
-        <p>Ex suspendisse vestibulum turpis luctus pretium posuere vestibulum feugiat non metus quis vitae&hellip;</p>
-        <footer><a class="btn" href="#">Read More</a></footer>
+    <div class="btmspace-20 left" style="margin-left: 30px;" >
+      <div class="pad2"></div>
+      <div class="pad3"></div>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h3 class="nospace">About Us:</h3>
       </div>
-      <article class="one_third"><a href="#"><img class="btmspace-30" src="images/demo/320x210.png" alt=""></a>
-        <h6 class="nospace font-x1">Sapien porttitor ut</h6>
-        <p>Dignissim praesent consectetur nec tellus ut rutrum nam laoreet finibus mattis integer ullamcorper arcu&hellip;</p>
-      </article>
-      <article class="one_third"><a href="#"><img class="btmspace-30" src="images/demo/320x210.png" alt=""></a>
-        <h6 class="nospace font-x1">Praesent sed blandit</h6>
-        <p>Pellentesque vehicula dictum ligula tellus convallis nisl vel scelerisque quam ligula a mauris quisque&hellip;</p>
-      </article>
+      <div class="pad3"></div>
+        <p class="nospace"> Freewater Productions is Duke University's <strong>foremost and only student-run production company, </strong>
+          operating under the umbrella of Duke's student union, the Duke University Union (DUU). <strong> Our goal is to 
+          be a completely accessible resource for any member of the student body to be involved in incredible content creation. </strong> </p>
     
+    <div class="pad3"></div>
+    <p class="nospace">With Freewater, you have the opportunity to:</p>
+    <div class="pad4"></div>
+<ul class="bullet-list">
+  <li>Direct your own movie</li>
+  <li>Learn how to operate a camera, lighting, or sound equipment</li>
+  <li>Write a really good script</li>
+  <li>Act in a real production</li>
+  <li>Edit the finished product</li>
+  <li>Be the planner that makes it all happen</li>
+</ul>
+<div class="pad3"></div>
+    <p class="nospace">If you've ever wondered what it might be like to be on a movie set, <strong>we are 
+      the place for you! </strong>No experience is necessary, nor any kind of desire to work in the film industry someday. We just love 
+      to make movies, and we hope that you'll join us to do something amazing! </p>
+      <div class="pad3"></div>
+      <p class="nospace">Freewater filmmakers have been <strong>accepted into renowned film festivals, created music videos for 
+        award-winning artists, and had their films screened across campus!</strong> We offer workshops on various aspects of the 
+        filmmaking process throughout the semester, as well as alumni panels, screenings, and social events. </p>
+        <div class="pad3"></div>
+      <p class="nospace">Your level of involvement is entirely up to you, and could range from coming to one day on set
+         or helping edit a project to producing or directing your own film. To see some of the incredible projects 
+        produced by Freewater in the past, check out our Past Films page. If you're curious and want to learn more, 
+        feel free to send us an email at duufwproductions@duke.edu, or follow us on social media via the icons below. </p>
+        <div class="pad3"></div>
+      <p class="nospace">We also have weekly production meetings<strong> Wednesdays 7-8pm in the DUU office. </strong>All are welcome, 
+        so feel free to stop by and check us out! </p>
+        <div class="pad2"></div>
+
     </div>
-    <div class="pad2"></div>
+</div>
+   
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+
+
+<div class="wrapper row3">
+  
+  <main class="hoc container clear"> 
+    <!-- main body -->
     <!-- ################################################################################################ -->
-  </section>
+    <div class="btmspace-20 left" style="margin-left: 30px;" >
+      <div class="pad2"></div>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h3 class="nospace">Make Your Own Film:</h3>
+      </div>
+        <div class="pad3"></div>
+        <img class="filmmaking-image" src="images/graphics/DevOps Graphics Package/Additional/MeOnSet01.jpeg" alt="Filmmaking">
+        <p class="nospace" style="font-size: 9px;">First assistant director Katie Cannon (left) with second assistant director 
+          Miranda Gershoni (right) on the set of Fair Faults (2019), directed by Robin Wang</p>
+          <div class="pad3"></div>
+      
+      </div>
+</div>
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+
+
+<div class="wrapper row3">
+  
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="btmspace-20 left" style="margin-left: 30px;" >
+      <div class="pad2"></div>
+      <div class="pad3"></div>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h3 class="nospace">Contact Us:</h3>
+      </div>
+        <div class="pad3"></div>
+        <p class="contact-information">
+          Have questions or want to get in touch with Freewater Productions? We'd love to hear from you! </p>
+          <p><strong>Here are the ways you can contact us:</strong> </p>
+          <p> Email: <a href="mailto:freewater-productions@duke.edu">freewater-productions@duke.edu</a></p>
+          <ul class="bullet-list">
+              <li>Stephen Kim, Chair: <a href="mailto:stephen.kim@duke.edu">stephen.kim@duke.edu</a></li>
+              <li>Andrew Cao, Vice Chair: <a href="mailto:andrew.cao@duke.edu">andrew.cao@duke.edu</a></li>
+              <li>Steve Milligan, Faculty Advisor: <a href="mailto:steve.milligan@duke.edu">steve.milligan@duke.edu</a></li>
+              <li>Sonia Green, Marketing Chair: <a href="mailto:sonia.green@duke.edu">sonia.green@duke.edu</a></li>
+              
+          </ul> 
+          <div class="pad3"></div>
+          <div class="social-media">
+            <a href="https://www.instagram.com/p/C1VNaoRCEZq/?hl=en" target="_blank"><img src="images/graphics/logos/instagram.png" alt="Twitter"></a>
+            <a href="https://www.facebook.com/DUUFreewaterProductions/" target="_blank"><img src="images/graphics/logos/facebook.png" alt="Facebook"></a>
+            <a href="https://vimeo.com/freewater" target="_blank"><img src="images/graphics/logos/vimeo.png" alt="Instagram"></a>
+        </div>
+        <div class="pad3"></div>
+          <p>We look forward to hearing from you and discussing how we can collaborate on your next film project!</p>
+      
+
+        <div class="pad2"></div>
+        <div class="pad3"></div>
+      </div>
+</div>
+   
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
 </div>
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper row4 bgded overlay" style="background-image:url('images/demo/backgrounds/02.png');">
-  <footer id="footer" class="hoc clear"> 
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div id="footer-wrapper" class="wrapper row4 bgded overlay" style="background-image:url('images/graphics/black.webp');">
+  <footer id="footer" class="hoc clear footer-content"> 
+    <div class="btmspace-10 left" style="margin-left: 20px;">
     <!-- ################################################################################################ -->
     <div class="one_third first">
-      <h3 class="heading">Geodarn</h3>
+      <h3 class="heading">Freewater Productions</h3>
       <ul class="faico clear">
-        <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
-        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-        <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+        <li><a class="faicon-instagram" href="https://www.instagram.com/p/C1VNaoRCEZq/?hl=en"><i class="fa fa-instagram"></i></a></li>
+        <li><a class="faicon-facebook" href="https://www.facebook.com/DUUFreewaterProductions/"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="faicon-vimeo" href="https://vimeo.com/freewater"><i class="fa fa-vimeo"></i></a></li>
+        <li><a class="faicon-linkedin" href="https://www.linkedin.com/company/freewaterproductions"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="faicon-envelope" href="https://docs.google.com/forms/d/1B5ndW0RBDbZMuJ2J-mRn76s63CySIWGgY_Du4RF0rL4/viewform?edit_requested=true"><i class="fa fa-envelope"></i></a></li>
       </ul>
     </div>
     <div class="one_third">
       <ul class="nospace meta">
-        <li class="btmspace-15"><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
-        <li><i class="fa fa-envelope-o"></i> info@domain.com</li>
+        <li class="btmspace-15"><i class="fa fa-instagram"></i> @duufreewater</li>
+        <li><i class="fa fa-envelope-o"></i> freewater-productions@duke.edu</li>
       </ul>
     </div>
     <div class="one_third">
@@ -303,17 +487,17 @@ body {
         </fieldset>
       </form>
     </div>
+  </div>
     <!-- ################################################################################################ -->
   </footer>
 </div>
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper row5">
+<div class="wrapper row5" style="background-image:url('images/graphics/black.webp');">
   <div id="copyright" class="hoc clear"> 
     <!-- ################################################################################################ -->
-    <p class="fl_left">Copyright &copy; 2016 - All Rights Reserved - <a href="#">Domain Name</a></p>
-    <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <p class="fl_left" style="color: gray;font-size: 14px;margin-left: 15px;"> &copy; 2024 Freewater Productions. All Rights Reserved. </p>
     <!-- ################################################################################################ -->
   </div>
 </div>
