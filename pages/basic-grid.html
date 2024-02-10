@@ -13,19 +13,103 @@ Licence URI: http://www.os-templates.com/template-terms
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 <style type="text/css">
-/* DEMO ONLY */
-.container .demo{text-align:center;}
-.container .demo div{padding:8px 0;}
-.container .demo div:nth-child(odd){color:#FFFFFF; background:#CCCCCC;}
-.container .demo div:nth-child(even){color:#FFFFFF; background:#979797;}
-@media screen and (max-width:900px){.container .demo div{margin-bottom:0;}}
-/* DEMO ONLY */
+
+.one_third_ {
+    width: calc(100% / 6 - 20px); /* Calculate 1/6 of the available width and subtract the desired margin */
+    margin: 30px; /* Adjust margin as needed */
+    float: left;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+.one_third_ article {
+    height: 300px; /* Adjust height as needed */
+    padding: 20px; /* Adjust padding as needed */
+    border: 1px solid #ccc; /* Add border for visualization */
+}
+
+.one_third_ article .txtwrap,
+.one_third_ article footer {
+    margin: 0; /* Remove any default margin */
+}
+  .bgded.overlay {
+  position: relative; /* Set the position to relative */
+  z-index: 2; /* Add any other necessary styles */
+}
+
+.flexslider {
+  position: absolute; /* Set the position to absolute */
+  top: 7%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Ensure the Flexslider is above the images */
+}
+
+.wrapper.row3{
+  position: relative;
+  z-index:3;
+}
+.pad {
+    padding-top: 75px; 
+    padding-bottom: 75px; 
+    }
+
+.pad2 {
+    padding-top: 30px; 
+    padding-bottom: 30px; 
+    }
+
+.pad3 {
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    }
+
+.pad4 {
+    padding-top: 5px; 
+    }
+
 body {
     background-color: black;
 }
 
 
-#header {
+
+/* Apply styles only to elements within the third wrapper */
+.wrapper.row3 .container {
+    padding: 0; /* Remove any padding */
+    width: 100%; /* Make the container take up the full width of the viewport */
+    max-width: 100%; /* Ensure the container doesn't exceed the width of the viewport */
+    display: flex;
+    justify-content: center; /* Center the elements horizontally */
+    align-items: center; /* Center the elements vertically */
+    position: relative;
+    z-index: 3;
+}
+
+.wrapper.row3 .element {
+    margin-left: 0; /* Remove any left margin */
+    margin-right: 0; /* Remove any right margin */
+    width: 100%; /* Make the element take up the full width of its container */
+    max-width: 100%; /* Ensure the element doesn't exceed the width of its container */
+}
+
+
+p {
+    font-size: 16px; /* Change the font size as needed */
+    color: black;
+    
+  }
+
+
+h3 {
+    font-size: 35px; /* Change the font size as needed */
+    color: black;
+    
+  }
+
+
+  #header {
     display: flex;
     justify-content: space-between;
   
@@ -40,9 +124,63 @@ body {
     width: 900px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
 }
-
 #logo {
     margin-top: 0 !important; /* Remove the gap */
+}
+
+.bullet-list {
+  list-style-type: none; /* Set the bullet style */
+  padding-left: 100px; /* Add left padding to create space for the bullets */
+  color: black;
+  font-size: 16px;
+}
+
+.bullet-list li {
+  margin-bottom: 10px; /* Adjust the margin bottom as needed */
+  background-image: url('images/graphics/logos/water_drop.png'); /* Replace 'your_bullet_image.png' with the path to your bullet image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: left center; /* Position the image on the left center of each list item */
+  padding-left: 20px;
+  background-size: 20px; /* Change the size as needed */
+}
+
+.filmmaking-image {
+  width: 700px; /* Set the width of the image */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.footer-content {
+    color: white;
+  }
+
+  .footer-content a {
+    color: white;
+  }
+
+  #footer-wrapper {
+    margin: 0;
+    padding: 10;
+  }
+
+  /* Adjust margin and padding for the footer */
+  #footer {
+    margin: 10;
+    padding: 35px 0; /* Adjust the top and bottom padding as needed */
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 150px; /* Adjust the spacing between the images */
+}
+
+.social-media img {
+    width: 50px; /* Adjust the width of the images as needed */
+    height: auto; /* Maintain aspect ratio */
 }
 
 
@@ -80,63 +218,60 @@ body {
 
   <!-- ################################################################################################ -->
 
-<!-- End Top Background Image Wrapper -->
+
+  <div class="wrapper row3" style="display: flex; justify-content: center;">
+    <div class="pad3"></div>
+    <main class="hoc container clear"> 
+      <!-- main body -->
+      <!-- ################################################################################################ -->
+      <div class="btmspace-20 left" style="margin-left: 30px;" >
+        <div class="pad2"></div>
+        <div class="pad3"></div>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <h3 class="nospace">Contact Us:</h3>
+        </div>
+          <div class="pad3"></div>
+          <p class="contact-information">
+            Have questions or want to get in touch with Freewater Productions? We'd love to hear from you! </p>
+            <p><strong>Here are the ways you can contact us:</strong> </p>
+            <p> Email: <a href="mailto:freewater-productions@duke.edu">freewater-productions@duke.edu</a></p>
+            <ul class="bullet-list">
+                <li>Stephen Kim, Chair: <a href="mailto:stephen.kim@duke.edu">stephen.kim@duke.edu</a></li>
+                <li>Andrew Cao, Vice Chair: <a href="mailto:andrew.cao@duke.edu">andrew.cao@duke.edu</a></li>
+                <li>Steve Milligan, Faculty Advisor: <a href="mailto:steve.milligan@duke.edu">steve.milligan@duke.edu</a></li>
+                <li>Sonia Green, Marketing Chair: <a href="mailto:sonia.green@duke.edu">sonia.green@duke.edu</a></li>
+                
+            </ul> 
+            <div class="pad3"></div>
+            <div class="social-media">
+              <a href="https://www.instagram.com/p/C1VNaoRCEZq/?hl=en" target="_blank"><img src="../images/graphics/logos/instagram.png" alt="Twitter"></a>
+              <a href="https://www.facebook.com/DUUFreewaterProductions/" target="_blank"><img src="../images/graphics/logos/facebook.png" alt="Facebook"></a>
+              <a href="https://vimeo.com/freewater" target="_blank"><img src="../images/graphics/logos/vimeo.png" alt="Instagram"></a>
+          </div>
+          <div class="pad3"></div>
+            <p>We look forward to hearing from you and discussing how we can collaborate on your next film project!</p>
+            <div class="pad3"></div>
+          <div class="pad3"></div>
+          <div class="pad3"></div>
+            <div style="display: flex; justify-content: center;"><img src="../images/graphics/logos/freewater_whitebg.png" style="max-width: 40%;" alt="FreeWater Logo"></div>
+
+          <div class="pad3"></div>
+          <div class="pad3"></div>
+          <div class="pad3"></div>
+        </div>
+  </div>
+     
+      <!-- ################################################################################################ -->
+      <!-- / main body -->
+      <div class="clear"></div>
+    </main>
+  </div>
+
+
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper row3">
-  <main class="hoc container clear"> 
-    <!-- main body -->
-    <!-- ################################################################################################ -->
-    <div class="content"> 
-      <!-- ################################################################################################ -->
-      <h2>Half</h2>
-      <!-- ################################################################################################ -->
-      <div class="group btmspace-50 demo">
-        <div class="one_half first">1/2</div>
-        <div class="one_half">1/2</div>
-      </div>
-      <!-- ################################################################################################ -->
-      <h2>Quarter</h2>
-      <!-- ################################################################################################ -->
-      <div class="group btmspace-50 demo">
-        <div class="one_quarter first">1/4</div>
-        <div class="one_quarter">1/4</div>
-        <div class="one_quarter">1/4</div>
-        <div class="one_quarter">1/4</div>
-      </div>
-      <div class="group btmspace-50 demo">
-        <div class="one_quarter first">1/4</div>
-        <div class="one_quarter">1/4</div>
-        <div class="two_quarter">2/4 or 1/2</div>
-      </div>
-      <div class="group btmspace-50 demo">
-        <div class="one_quarter first">1/4</div>
-        <div class="three_quarter">3/4</div>
-      </div>
-      <!-- ################################################################################################ -->
-      <h2>Third</h2>
-      <!-- ################################################################################################ -->
-      <div class="group btmspace-50 demo">
-        <div class="one_third first">1/3</div>
-        <div class="one_third">1/3</div>
-        <div class="one_third">1/3</div>
-      </div>
-      <div class="group demo">
-        <div class="one_third first">1/3</div>
-        <div class="two_third">2/3</div>
-      </div>
-      <!-- ################################################################################################ -->
-    </div>
-    <!-- ################################################################################################ -->
-    <!-- / main body -->
-    <div class="clear"></div>
-  </main>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div id="footer-wrapper" class="wrapper row4 bgded overlay" style="background-image:url('images/graphics/black.webp');">
+<div id="footer-wrapper" class="wrapper row4 bgded overlay" style="background-image:url('../images/graphics/black.webp');">
   <footer id="footer" class="hoc clear footer-content"> 
     <div class="btmspace-10 left" style="margin-left: 20px;">
     <!-- ################################################################################################ -->
@@ -174,7 +309,7 @@ body {
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper row5" style="background-image:url('images/graphics/black.webp');">
+<div class="wrapper row5" style="background-image:url('../images/graphics/black.webp');">
   <div id="copyright" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <p class="fl_left" style="color: gray;font-size: 14px;margin-left: 15px;"> &copy; 2024 Freewater Productions. All Rights Reserved. </p>
