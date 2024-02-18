@@ -8,18 +8,108 @@ Licence URI: http://www.os-templates.com/template-terms
 -->
 <html>
 <head>
-<title>Geodarn | Pages | Gallery</title>
+<title>Geodarn | Pages | Basic Grid</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
-<style>
+<style type="text/css">
 
-body {
-    background-color: black;
+.one_third_ {
+    width: calc(100% / 6 - 20px); /* Calculate 1/6 of the available width and subtract the desired margin */
+    margin: 30px; /* Adjust margin as needed */
+    float: left;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 
-#header {
+.one_third_ article {
+    height: 300px; /* Adjust height as needed */
+    padding: 20px; /* Adjust padding as needed */
+    border: 1px solid #ccc; /* Add border for visualization */
+}
+
+.one_third_ article .txtwrap,
+.one_third_ article footer {
+    margin: 0; /* Remove any default margin */
+}
+  .bgded.overlay {
+  position: relative; /* Set the position to relative */
+  z-index: 2; /* Add any other necessary styles */
+}
+
+.flexslider {
+  position: absolute; /* Set the position to absolute */
+  top: 7%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Ensure the Flexslider is above the images */
+}
+
+.wrapper.row3{
+  position: relative;
+  z-index:3;
+}
+.pad {
+    padding-top: 75px; 
+    padding-bottom: 75px; 
+    }
+
+.pad2 {
+    padding-top: 30px; 
+    padding-bottom: 30px; 
+    }
+
+.pad3 {
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    }
+
+.pad4 {
+    padding-top: 5px; 
+    }
+
+body {
+    background-color: white;
+}
+
+
+
+/* Apply styles only to elements within the third wrapper */
+.wrapper.row3 .container {
+    padding: 0; /* Remove any padding */
+    width: 100%; /* Make the container take up the full width of the viewport */
+    max-width: 100%; /* Ensure the container doesn't exceed the width of the viewport */
+    display: flex;
+    justify-content: center; /* Center the elements horizontally */
+    align-items: center; /* Center the elements vertically */
+    position: relative;
+    z-index: 3;
+}
+
+.wrapper.row3 .element {
+    margin-left: 0; /* Remove any left margin */
+    margin-right: 0; /* Remove any right margin */
+    width: 100%; /* Make the element take up the full width of its container */
+    max-width: 100%; /* Ensure the element doesn't exceed the width of its container */
+}
+
+
+p {
+    font-size: 16px; /* Change the font size as needed */
+    color: black;
+    
+  }
+
+
+h3 {
+    font-size: 35px; /* Change the font size as needed */
+    color: black;
+    
+  }
+
+
+  #header {
     display: flex;
     justify-content: space-between;
   
@@ -38,17 +128,28 @@ body {
     margin-top: 0 !important; /* Remove the gap */
 }
 
-.pad2 {
-    padding-top: 30px; 
-    padding-bottom: 30px; 
-    }
+.bullet-list {
+  list-style-type: none; /* Set the bullet style */
+  padding-left: 100px; /* Add left padding to create space for the bullets */
+  color: black;
+  font-size: 16px;
+}
 
-.pad3 {
-    padding-top: 10px; 
-    padding-bottom: 10px; 
-    }
+.bullet-list li {
+  margin-bottom: 10px; /* Adjust the margin bottom as needed */
+  background-image: url('images/graphics/logos/water_drop.png'); /* Replace 'your_bullet_image.png' with the path to your bullet image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: left center; /* Position the image on the left center of each list item */
+  padding-left: 20px;
+  background-size: 20px; /* Change the size as needed */
+}
 
-    .footer-content {
+.filmmaking-image {
+  width: 700px; /* Set the width of the image */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.footer-content {
     color: white;
   }
 
@@ -81,6 +182,8 @@ body {
     width: 50px; /* Adjust the width of the images as needed */
     height: auto; /* Maintain aspect ratio */
 }
+
+
 </style>
 </head>
 <body id="top">
@@ -88,87 +191,87 @@ body {
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- Top Background Image Wrapper -->
-<div class="bgded overlay" style="background-image:url('images/graphics/black.webp');"> 
+<div class="bgded overlay" style="background-image:url('../images/graphics/black.webp');"> 
   <!-- ################################################################################################ -->
   <div class="wrapper row1">
     <header id="header" class="hoc clear"> 
       <!-- ################################################################################################ -->
-      <div id="logo" class="fl_left">
-        <img src = "../images/graphics/logos/promising.png" alt = "Logo Image">
+      <div id="logo" >
+        <img src = "../images/graphics/logos/promising.png" >
       </div>
       <nav id="mainav" class="fl_right">
         <ul class="clear">
-          <li><a href="../index.html">Home</a></li>
-          <li class="active"><a href="gallery.html">Projects</a></li>
-          <li><a href="full-width.html">Make a Film</a></li>
-          <li><a href="sidebar-left.html">Glossary</a></li>
-          <li><a href="basic-grid.html">Contact</a></li>
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="make-a-film.html">Make a Film</a></li>
+          <li><a href="glossary.html">Glossary</a></li>
+          <li class="active"><a href="contact-us.html">Contact</a></li>
         </ul>
       </nav>
       <!-- ################################################################################################ -->
     </header>
   </div>
+</div>
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
 
   <!-- ################################################################################################ -->
-</div>
-<!-- End Top Background Image Wrapper -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row3">
-  <main class="hoc container clear"> 
-    <!-- main body -->
-    <!-- ################################################################################################ -->
-    <div class="content"> 
+
+
+  <div class="wrapper row3" style="display: flex; justify-content: center;">
+    <div class="pad3"></div>
+    <main class="hoc container clear"> 
+      <!-- main body -->
       <!-- ################################################################################################ -->
-      <div id="gallery">
-        <figure>
-          <header class="heading">Gallery Title Goes Here</header>
-          <ul class="nospace clear">
-            <li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-          </ul>
-          <figcaption>Gallery Description Goes Here</figcaption>
-        </figure>
-      </div>
+      <div class="btmspace-20 left" style="margin-left: 30px;" >
+        <div class="pad2"></div>
+        <div class="pad3"></div>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <h3 class="nospace">Contact Us:</h3>
+        </div>
+          <div class="pad3"></div>
+          <p class="contact-information">
+            Have questions or want to get in touch with Freewater Productions? We'd love to hear from you! </p>
+            <p><strong>Here are the ways you can contact us:</strong> </p>
+            <p> Email: <a href="mailto:freewater-productions@duke.edu">freewater-productions@duke.edu</a></p>
+            <ul class="bullet-list">
+                <li>Stephen Kim, Chair: <a href="mailto:stephen.kim@duke.edu">stephen.kim@duke.edu</a></li>
+                <li>Andrew Cao, Vice Chair: <a href="mailto:andrew.cao@duke.edu">andrew.cao@duke.edu</a></li>
+                <li>Steve Milligan, Faculty Advisor: <a href="mailto:steve.milligan@duke.edu">steve.milligan@duke.edu</a></li>
+                <li>Sonia Green, Marketing Chair: <a href="mailto:sonia.green@duke.edu">sonia.green@duke.edu</a></li>
+                
+            </ul> 
+            <div class="pad3"></div>
+            <div class="social-media">
+              <a href="https://www.instagram.com/duufreewater/?hl=en" target="_blank"><img src="../images/graphics/logos/instagram.png" alt="Twitter"></a>
+              <a href="https://www.facebook.com/DUUFreewaterProductions/" target="_blank"><img src="../images/graphics/logos/facebook.png" alt="Facebook"></a>
+              <a href="https://vimeo.com/freewater" target="_blank"><img src="../images/graphics/logos/vimeo.png" alt="Instagram"></a>
+          </div>
+          <div class="pad3"></div>
+            <p>We look forward to hearing from you and discussing how we can collaborate on your next film project!</p>
+          </div>
+        </div>
+            <div class="pad3"></div>
+          <div class="pad3"></div>
+          <div class="pad3"></div>
+          <!-- ################################################################################################ -->
+        </div>
+            <div style="display: flex; justify-content: center;"><img src="../images/graphics/logos/freewater_whitebg.png" style="max-width: 40%;" alt="FreeWater Logo"></div>
+
+          <div class="pad3"></div>
+          <div class="pad3"></div>
+          <div class="pad3"></div>
+        </div>
+  </div>
+     
       <!-- ################################################################################################ -->
-      <!-- ################################################################################################ -->
-      <nav class="pagination">
-        <ul>
-          <li><a href="#">&laquo; Previous</a></li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><strong>&hellip;</strong></li>
-          <li><a href="#">6</a></li>
-          <li class="current"><strong>7</strong></li>
-          <li><a href="#">8</a></li>
-          <li><a href="#">9</a></li>
-          <li><strong>&hellip;</strong></li>
-          <li><a href="#">14</a></li>
-          <li><a href="#">15</a></li>
-          <li><a href="#">Next &raquo;</a></li>
-        </ul>
-      </nav>
-      <!-- ################################################################################################ -->
-    </div>
-    <!-- ################################################################################################ -->
-    <!-- / main body -->
-    <div class="clear"></div>
-  </main>
-</div>
+      <!-- / main body -->
+      <div class="clear"></div>
+    </main>
+  </div>
+
+
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
@@ -179,7 +282,7 @@ body {
     <div class="one_third first">
       <h3 class="heading">Freewater Productions</h3>
       <ul class="faico clear">
-        <li><a class="faicon-instagram" href="https://www.instagram.com/p/C1VNaoRCEZq/?hl=en"><i class="fa fa-instagram"></i></a></li>
+        <li><a class="faicon-instagram" href="https://www.instagram.com/duufreewater/?hl=en"><i class="fa fa-instagram"></i></a></li>
         <li><a class="faicon-facebook" href="https://www.facebook.com/DUUFreewaterProductions/"><i class="fa fa-facebook"></i></a></li>
         <li><a class="faicon-vimeo" href="https://vimeo.com/freewater"><i class="fa fa-vimeo"></i></a></li>
         <li><a class="faicon-linkedin" href="https://www.linkedin.com/company/freewaterproductions"><i class="fa fa-linkedin"></i></a></li>

@@ -1,0 +1,63 @@
+/*
+	STYLE SHEET FOR JQUERY LISTNAV PLUGIN V 3.0.0, 11/22/2017
+	For more information, visit http://esteinborn.github.com/jquery-listnav
+*/
+.listNav,
+.ln-letters {
+  overflow: hidden;
+  text-align: center; /* Center the letters horizontally */
+
+}
+
+.listNavHide {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.letterCountShow {
+  display: block;
+}
+
+.ln-letters a {
+  font-size: 20px; /* Increase font size */
+  display: inline-block; /* Display letters inline */
+  padding: 10px 20px; /* Adjust padding for spacing */
+  text-decoration: none;
+  margin: 5px 5px; /* Add vertical margin to create space between letters */
+  border: 1px solid black; /* Add border styles to each letter */
+}
+
+.ln-letters .ln-last {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.ln-letters a:hover,
+.ln-letters .ln-selected {
+  background-color: #eaeaea;
+}
+
+.ln-letters .ln-disabled {
+  color: black;
+}
+
+.ln-letter-count {
+  color: #336699;
+  font-size:6px;
+  left: 0;
+  line-height: 1.35;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 20px;
+}
+
+/*# sourceMappingURL=listnav.css.map */
