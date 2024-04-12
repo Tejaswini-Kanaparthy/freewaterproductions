@@ -11,7 +11,20 @@ File: Layout CSS
 @import url("fontawesome-4.6.3.min.css");
 @import url("custom.flexslider.css");
 @import url("framework.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+
+
+body {
+    font-family: "Montserrat" !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bebas Neue"!important;
+}
+#header, #mainav {
+    font-family: "Montserrat" !important;
+}
 /* Rows
 --------------------------------------------------------------------------------------------------------------- */
 .row0, .row0 a{}
@@ -121,7 +134,7 @@ File: Layout CSS
 nav ul, nav ol{margin:0; padding:0; list-style:none;}
 
 #mainav, #breadcrumb, .sidebar nav{line-height:normal;}
-#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"Open Sans"; font-size:10px; line-height:10px;}
 
 /* Top Navigation */
 #mainav{}

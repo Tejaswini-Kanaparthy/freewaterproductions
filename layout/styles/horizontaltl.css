@@ -109,7 +109,7 @@ visibility: visible;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-family: "FontAwesome"; /* Change font family */
+  font-family: "Montserrat"; 
   text-align: center; /* Center the text */
   white-space: nowrap; /* Prevent wrapping */
 }
