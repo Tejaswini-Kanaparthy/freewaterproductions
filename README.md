@@ -42,6 +42,8 @@ Freewater Productions is Duke University’s foremost and only student-run produ
 Here's how you can make edits and updates to the website:
 
 - **HTML Pages**: To modify the content of a page, open the corresponding HTML file and make your changes directly. Each film has its own page in the `pages` folder.
+
+- **Films**: To add a film to the list of films, utilize the template for generating the films unique page. Make sure to add access to this unique page within the code on index.html and projects.html by also following the template.
   
 - **Styles**: To change styles, fonts, or colors, edit the appropriate stylesheet in the `layout/styles` folder. For example, `layout.css` controls overall style, `custom.flexslider.css` controls Flexslider framework styles, and `horizontaltl.css` and `verticaltl.css` control timeline styles.
 
