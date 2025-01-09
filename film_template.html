@@ -1,11 +1,7 @@
+<!-- MAKE A COPY OF THIS FILE AND MOVE IT INTO PAGES WHEN TRYING TO INSERT A NEW FILM -->
+<!-- READ EVERY SINGLE GRAY COMMENT ON THIS FILE TO GUIDE THROUGH EDITING. -->
+
 <!DOCTYPE html>
-<!--
-Template Name: Geodarn
-Author: <a href="http://www.os-templates.com/">OS Templates</a>
-Author URI: http://www.os-templates.com/
-Licence: Free to use under our free template licence terms
-Licence URI: http://www.os-templates.com/template-terms
--->
 <html>
 <head>
 <title>Geodarn | Pages | Gallery</title>
@@ -13,126 +9,180 @@ Licence URI: http://www.os-templates.com/template-terms
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 <style>
+/*AFTER UPLOADING FILM CONTENT AND ITS POSTER IN THE MAIN SECTION OF THIS FILE (SCROLL SIGNIFICANTLY DOWN), 
+NAVIGATE BACK TO THIS SECTION TO EDIT THE FOLLOWING *THREE* STYLES BELOW THIS STATEMENT IN ORDER TO ADJUST 
+THE IMAGE AND TEXT FORMATTING FOR A FILM'S PAGE*/
+
+.image-container {
+    flex: 3;
+}
+
+.image-container img {
+    width: 500px;
+    height: 700px;
+    margin-left: 100px;
+}
+
+.description {
+    flex: 3;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 50px;
+}
 
 body {
     background-color: black;
+    font-family: Arial, sans-serif;
+    color: rgb(214, 214, 214); 
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: white; 
+}
+
+p {
+    line-height: 1.5; 
+    margin-bottom: 10px; 
+}
+
+a {
+    color: lightblue; 
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; 
+}
 
 #header {
     display: flex;
     justify-content: space-between;
-  
 }
 
 #header #logo {
-  padding-right: 0px;
-  order: -1;
+    padding-right: 0px;
+    order: -1;
 }
 
 #logo img {
-    width: 900px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 900px;
+    height: auto;
 }
+
 #logo {
-    margin-top: 0 !important; /* Remove the gap */
+    margin-top: 0 !important;
 }
 
 .pad2 {
-    padding-top: 30px; 
-    padding-bottom: 30px; 
-    }
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 .pad3 {
-    padding-top: 10px; 
-    padding-bottom: 10px; 
-    }
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
-    .footer-content {
+.footer-content {
     color: white;
-  }
+}
 
-  .footer-content a {
+.footer-content a {
     color: white;
-  }
+}
 
-  #footer-wrapper {
+#footer-wrapper {
     margin: 0;
     padding: 10;
-  }
+}
 
-  /* Adjust margin and padding for the footer */
-  #footer {
+#footer {
     margin: 10;
-    padding: 35px 0; /* Adjust the top and bottom padding as needed */
-  }
+    padding: 35px 0;
+}
 
-  .social-media {
+.social-media {
     display: flex;
     align-items: center;
 }
 
 .social-media a {
     display: inline-block;
-    margin-right: 150px; /* Adjust the spacing between the images */
+    margin-right: 150px;
 }
 
 .social-media img {
-    width: 50px; /* Adjust the width of the images as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 50px;
+    height: auto;
 }
 
+.container {
+    display: flex;
+    align-items: center;
+}
 
 
 </style>
 </head>
 <body id="top">
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- Top Background Image Wrapper -->
-<div class="bgded overlay" style="background-image:url('../images/graphics/black.webp');"> 
-  <!-- ################################################################################################ -->
-  <div class="wrapper row1">
-    <header id="header" class="hoc clear"> 
-      <!-- ################################################################################################ -->
-      <div id="logo" class="fl_left">
-        <img src = "../images/graphics/logos/promising.png" alt = "Logo Image">
-      </div>
-      <nav id="mainav" class="fl_right">
-        <ul class="clear">
-          <li><a href="../home.html">Home</a></li>
-          <li class="active"><a href="projects.html">Projects</a></li>
-          <li><a href="make-a-film.html">Make a Film</a></li>
-          <li><a href="glossary.html">Glossary</a></li>
-          <li><a href="contact-us.html">Contact</a></li>
-        </ul>
-      </nav>
-      <!-- ################################################################################################ -->
-    </header>
-  </div>
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
 
-  <!-- ################################################################################################ -->
-</div>
-<!-- End Top Background Image Wrapper -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
+  <div class="bgded overlay" style="background-image:url('../images/graphics/black.webp');"> 
+    <div class="wrapper row1">
+        <header id="header" class="hoc clear"> 
+            <div id="logo" class="fl_left">
+                <img src = "../images/graphics/logos/promising.png" alt = "Logo Image">
+            </div>
+            <nav id="mainav" class="fl_right">
+                <ul class="clear">
+                    <li><a href="../home.html">Home</a></li>
+                    <li class="active"><a href="projects.html">Projects</a></li>
+                    <li><a href="make-a-film.html">Make a Film</a></li>
+                    <li><a href="glossary.html">Glossary</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
 
-<div class="pad">
 </div>
 
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
+<div class="pad"></div>
+<div class="container">
+    <div class="image-container">
+              <!--  INSERT FILM POSTER IMAGE IN THIS LINE. AN EXAMPLE OF FORMATTING FILM POSTER RESIDES BELOW: 
+        <img src="../images/graphics/DevOps Graphics Package/Vertical Posters/Last Day of May.jpg" alt="Image Description"> -->
+    </div>
+    <div class="description">
+        <!--  INSERT FILM TEXT IN THIS SECTION. AN EXAMPLE OF FORMATTING TEXT RESIDES BELOW: 
+        <h1>Last Day of May</h1>
+        <p><strong>Written, Directed, and Edited By:</strong> Andrew Cao</p>
+        <p><strong>IMDB Page:</strong> <a href="https://www.imdb.com/title/tt28536730/" target="_blank">https://www.imdb.com/title/tt28536730/</a></p>
+        <p>Looking for something to do, a man drives around town and comes to terms with the world around him.</p>
+        <p><strong>Starring:</strong> Bri’Yon Watts, John Adamcik, Lillian Yaemi, Christian Tatum</p>
+        <p><strong>Producer:</strong> Andrew Cao, Elliott Moreland, Saad Hakim</p>
+        <p><strong>Director of Photography:</strong> Andrew Cao</p>
+        <p><strong>Technical Supervisor:</strong> Steve Milligan</p>
+        <p><strong>Assistant Director:</strong> Saad Hakim</p>
+        <p><strong>1st Assistant Camera:</strong> Andrew Cao</p>
+        <p><strong>2nd Assistant Camera:</strong> Miranda Zhong, Christian Tatum</p>
+        <p><strong>Sound Operator:</strong> Saad Hakim</p>
+        <p><strong>Key Grip:</strong> Sonia Green</p>
+        <p><strong>Set Photographer:</strong> Allison Joyce</p>
+        <p><strong>Location:</strong> Lula and Sadie’s, Dave Pullin</p>
+        <p><strong>Extras:</strong> Wayne Heiser, Jean Sokolofski</p>
+        <p><strong>Freewater Advisor:</strong> Stephen Kim</p>
+        <p><strong>Supported By:</strong> Beam Cinema</p>  -->
+    </div>
+</div>
+
+<!-- FOOTER CONTENT BELOW. DO NOT ALTER ANYTHING BELOW THIS LINE. -->
 <div id="footer-wrapper" class="wrapper row4 bgded overlay" style="background-image:url('../images/graphics/black.webp');">
   <footer id="footer" class="hoc clear footer-content"> 
     <div class="btmspace-10 left" style="margin-left: 20px;">
-    <!-- ################################################################################################ -->
-    <div class="one_third first">
+
+      <div class="one_third first">
       <h3 class="heading">Freewater Productions</h3>
       <ul class="faico clear">
         <li><a class="faicon-instagram" href="https://www.instagram.com/p/C1VNaoRCEZq/?hl=en"><i class="fa fa-instagram"></i></a></li>
@@ -187,3 +237,30 @@ body {
 </script>
 </body>
 </html>
+
+<!--FINAL COMMENTS:
+
+ADDING A FILM'S PAGE TO THE FRONT PAGE:
+1) Add the film poster within this repository's image folder
+2) Go to index.html, and customize this chunk of code to be relevant to the film page that was just added:
+<li class="one_third_ ">
+        <article class="bgded overlay" style="background-image:url('images/graphics/DevOps Graphics Package/Vertical Posters/Sabre - A Fencer_s Story.jpg');">
+         <footer><a href="pages/a-fencers-story.html">More &raquo;</a></footer>
+        </article>
+</li>
+
+ADDING A FILM'S PAGE TO THE PROJECTS PAGE:
+1) Go to pages/projects.html, and customize this chunk of code to be relevant to the film page that was just added:
+<div data-tags="all,comp"><a href="a-fencers-story.html"><img src="../images/graphics/DevOps Graphics Package/Vertical Posters/Sabre - A Fencer_s Story.jpg" alt="Fencer"></a></div>
+
+ADDING A FILM'S PAGE TO THE GLOSSARY PAGE:
+1) Go to pages/glossary.html, and customize this chunk of code to be relevant to the film page that was just added:
+<div class="pad3"></div>
+<li><a href="a-fencers-story.html">Sabre: A Fencer's Story</a></li>
+
+
+
+THAT'S ALL! Congratulations on updating your website with a brand new film! 
+Don't be afraid to reach out with any website questions if you happen to run into any issues: 
+tk245@duke.edu (Teju Kanaparthy)
+      -->
